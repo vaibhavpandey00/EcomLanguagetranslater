@@ -89,7 +89,7 @@ const Hero = () => {
                         <div className="h-3/5 flex justify-center items-center gap-40">
                             <select className="cursor-pointer outline-none" onChange={(e) => {
                                 setFromlan(e.target.value);
-                                console.log(fromlan);
+                                // console.log(fromlan);
                             }}>
                                 <option value="">None</option>
                                 {languages.map((item, i) => (
@@ -99,7 +99,7 @@ const Hero = () => {
 
                             <select className="cursor-pointer outline-none" onChange={(e) => {
                                 setTolan(e.target.value);
-                                console.log(tolan);
+                                // console.log(tolan);
                             }}>
                                 <option value="">None</option>
                                 {languages.map((item, i) => (
