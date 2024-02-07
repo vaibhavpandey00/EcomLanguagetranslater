@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { BiText } from "react-icons/bi";
 import { MdKeyboardVoice } from "react-icons/md";
 import { FaImage } from "react-icons/fa";
@@ -77,16 +77,21 @@ const Hero = () => {
 
     return (
         <div className="w-full h-[51.8rem] flex items-center justify-center border">
+
             <div className="w-4/5 h-4/5 flex justify-center items-center bg-white shadow-2xl shadow-white rounded-lg border">
+
                 <div className="h-full w-1/3 flex flex-col gap-5 justify-center p-6 border-r-2">
                     <p className="text-4xl p-4 border rounded-3xl bg-indigo-500 text-white font-extrabold">Upload your Document</p>
                     <p className="text-xl p-3 border-b-4">in text / voice / image</p>
                 </div>
+
                 <div className="h-full w-2/3 p-12 flex flex-col gap-5 rounded-lg border-r-2">
                     <div className="w-full h-2/5 p-7 rounded-xl border">
                         <div className="h-2/5 font-semibold text-xl">Chose your Input language and Output language
                         </div>
                         <div className="h-3/5 flex justify-center items-center gap-40">
+
+                            {/* Choses default document lan & set lan to fromlan */}
                             <select className="cursor-pointer outline-none" onChange={(e) => {
                                 setFromlan(e.target.value);
                                 // console.log(fromlan);
@@ -97,6 +102,7 @@ const Hero = () => {
                                 ))}
                             </select>
 
+                            {/* Choses out-put document lan & set lan to tolan */}
                             <select className="cursor-pointer outline-none" onChange={(e) => {
                                 setTolan(e.target.value);
                                 // console.log(tolan);
@@ -107,8 +113,8 @@ const Hero = () => {
                                 ))}
                             </select>
                         </div>
-
                     </div>
+
                     <div className="w-full h-3/5 p-7 rounded-xl flex flex-col border">
                         <p className="h-1/4 font-semibold text-xl">Select Document type</p>
                         <div className="h-3/4 flex justify-center gap-10">
