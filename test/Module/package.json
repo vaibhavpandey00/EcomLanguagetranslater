@@ -1,0 +1,17 @@
+{
+  "name": "vertex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "curl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/speech": "^6.1.1",
+    "@google-cloud/vision": "^4.0.3",
+    "openai": "^4.26.0"
+  }
+}
