@@ -8,6 +8,7 @@ import { FaRegFileImage } from "react-icons/fa";
 
 
 const Hero = () => {
+    // Add languages here with value
     const languages = [
         {
             value: "1",
@@ -40,6 +41,7 @@ const Hero = () => {
     const [typeVoice, setTypeVoice] = useState(false);
     const [typeImg, setTypeImg] = useState(false);
 
+    // Post image to cloude and generate URL
     const postImage = (pics) => {
         if (pics === undefined) {
             toast.warn("Please select an Image");
@@ -65,6 +67,7 @@ const Hero = () => {
         }
     }
 
+    // Post rec to cloud WORKING!
     const postVoice = (recs) => {
         if (recs === undefined) {
             toast.warn("Please select an Image");
@@ -112,6 +115,7 @@ const Hero = () => {
 
                             <div className="w-52 h-full flex flex-col justify-center items-center cursor-pointer text-xl hover:bg-indigo-500 hover:text-white duration-300 rounded-xl border" onClick={() => setTypeText(true)}><BiText />Text</div>
 
+                            {/* Text field input store in textField */}
                             {typeText && (
                                 <div className="w-full h-screen absolute top-0 left-0 backdrop-blur-sm bg-white/50 flex justify-center items-center">
                                     <div className="w-2/5 h-[51.8rem] rounded-xl flex flex-col justify-center items-center p-8 gap-3 bg-white border">
@@ -135,6 +139,7 @@ const Hero = () => {
 
                             <div className="w-52 h-full flex flex-col justify-center items-center cursor-pointer text-xl hover:bg-indigo-500 hover:text-white duration-300 rounded-xl border" onClick={() => setTypeVoice(true)}><MdKeyboardVoice />Voice</div>
 
+                            {/* Voice field input store in WORKING! */}
                             {typeVoice && (
                                 <div className="w-full h-screen absolute top-0 left-0 backdrop-blur-sm bg-white/50 flex justify-center items-center">
                                     <div className="w-2/5 h-[40rem] rounded-xl flex flex-col justify-center items-center p-8 gap-3 bg-white border">
@@ -156,6 +161,7 @@ const Hero = () => {
 
                             <div className="w-52 h-full flex flex-col justify-center items-center cursor-pointer text-xl hover:bg-indigo-500 hover:text-white duration-300 rounded-xl border" onClick={() => setTypeImg(true)}><FaImage />Image</div>
 
+                            {/* Image field input store in Cloud */}
                             {typeImg && (
                                 <div className="w-full h-screen absolute top-0 left-0 backdrop-blur-sm bg-white/50 flex justify-center items-center">
                                     <div className="w-2/5 h-[40rem] rounded-xl flex flex-col justify-center items-center p-8 gap-3 bg-white border">
